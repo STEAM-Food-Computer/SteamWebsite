@@ -1,0 +1,17 @@
+{
+  "name": "stuff",
+  "version": "1.0.0",
+  "description": "temp page to show that the app is under construction",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Madalitso Mchaina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodeman": "^1.1.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  }
+}
