@@ -1,5 +1,50 @@
-a{
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
 
+body{
+    position: relative;
+    background: linear-gradient( rgba(254, 246, 235, 0.3), rgba(254, 246, 235, 1) );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    vertical-align: middle;
+}
+
+footer a{
+    font-size: 40px;
+    padding-right: 12px;
+}
+
+footer > .row > .col{
+    line-height: 3;
+}
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+}
+
+.cover-image{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url('/images/food_cover.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 .center-text{
@@ -15,19 +60,53 @@ a{
     height: 658px;
 }
 
+.welcome-section{
+    padding-top: 12%;
+    color: white;
+    font-size: 20px;
+}
+
+
+
 .section-title{
     padding-bottom: 40px;
+    font-weight: bold;
 }
 
 .section-padding{
+    padding-top: 30px;
     padding-bottom: 80px;
 }
 
-.resize-team-image{
+.small-logo{
+    width:70px;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.team-image{
     width: 175px;
     height: 200px;
 }
 
 .horizontal-spacing{
     padding-bottom: 100px;
+}
+
+.contact-btn{
+    height: 50px;
+    width: 200px;
+    color: rgba(45, 204, 55, 1);
+    border-color: rgba(45, 204, 55, 1);
+}
+
+.contact-btn:hover{
+    background-color: rgba(45, 204, 55, 1);
+    border-color: rgba(45, 204, 55, 1);
+}
+
+.contact-btn:active{
+    color: rgba(45, 204, 55, 1);
+    background-color: rgba(45, 204, 55, 1);
 }

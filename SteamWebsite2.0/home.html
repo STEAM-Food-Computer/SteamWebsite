@@ -7,44 +7,53 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/steam_logo.png">
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 
     <title>STEAM Food Computer</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">STEAM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-right mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Prototype</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">The Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<nav id="steam-navbar" class="navbar navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">
+        <img src="/images/steam_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        STEAM
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="jumbotron center-text">
-        <div class = "container narrow-display">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-right mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#prototype">Prototype</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#team">The Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body data-spy="scroll" data-target="#steam-navbar" data-offset="0">
+
+    <div id = "home" class = "container-fluid cover-image center-text">
+        <div class = "container narrow-display welcome-section">
             <h1 class="display-4 section-title">Welcome to STEAM – the smart greenhouse</h1>
             <p class="lead">What if we could grow all types of vegetables and fruits anywhere in the world?</p>
             <p class="lead">Could we cut inefficiencies from the global food chain and offer fresher, healthier, local ingredients?</p>
@@ -53,85 +62,115 @@
                 and eating some of their own tomatoes, lettuce and other greens. By controlling factors such as temperature, nutrients, light, and humidity specific “climate recipes” can be perfectly
                 tuned to produce the desired harvests.
             </p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
         </div>
     </div>
-    <div class = "container section-padding">
-        <h1 class="display-4 center-text section-title">Prototype</h1>
-        <div class="row">
-            <div class="col">
-                <img src="/images/prototype.jpg" class="rounded float-left resize-prototype-image" alt="prototype image">
-            </div>
-            <div class="col">
-                <h2 class = "center-text">Bill of Materials</h2>
-                <ol>
-                    <li>Arduino UNO</li>
-                    <li>Arduino Ethernet Shield</li>
-                    <li>Fan</li>
-                    <li>Water, Temperature, Humidity Sensor</li>
-                    <li>Miscellaneous Tubing</li>
-                    <li>Watering Actuator</li>
-                    <li>LED Lights</li>
-                    <li>Power Supply</li>
-                    <li>Miscellaneous Wiring</li>
-                    <li>Fish tank</li>
-                    <li>External Power for Arduino</li>
-                    <li>2-channel relay 5V</li>
-                    <li>GFCI outlet</li>
-                    <li>Housing for outlet</li>
-                    <li>Extension cable (for wall plug)</li>
-                    <li>Wire Cutter</li>
-                    <li>Raw Wiring (arduino wires)</li>
-                    <li>Electrical Tape</li>
-                    <li>Computer</li>
-                </ol>
-            </div>
+    <a class="anchor" ></a>
+    <!--<div id="welcome-section" class="jumbotron center-text">
+    <div class = "container narrow-display">
+    <h1 class="display-4 section-title">Welcome to STEAM – the smart greenhouse</h1>
+    <p class="lead">What if we could grow all types of vegetables and fruits anywhere in the world?</p>
+    <p class="lead">Could we cut inefficiencies from the global food chain and offer fresher, healthier, local ingredients?</p>
+    <p>
+    The solution is STEAM – a computer controlled farming environment. Through the use of code, students and people who never would have dreamed of owning a garden, have now been producing
+    and eating some of their own tomatoes, lettuce and other greens. By controlling factors such as temperature, nutrients, light, and humidity specific “climate recipes” can be perfectly
+    tuned to produce the desired harvests.
+</p>
+</div>
+</div> -->
+
+<a class="anchor" id="prototype"></a>
+<div class = "container-fluid section-padding">
+    <h1 class="display-4 center-text section-title">Prototype</h1>
+    <div class="row">
+        <div class="col">
+            <img src="/images/prototype.jpg" class="rounded mx-auto d-block resize-prototype-image" alt="prototype image">
         </div>
-
+        <div class="col">
+            <h2 class = "">Bill of Materials</h2>
+            <ol>
+                <li>Arduino UNO</li>
+                <li>Arduino Ethernet Shield</li>
+                <li>Fan</li>
+                <li>Water, Temperature, Humidity Sensor</li>
+                <li>Miscellaneous Tubing</li>
+                <li>Watering Actuator</li>
+                <li>LED Lights</li>
+                <li>Power Supply</li>
+                <li>Miscellaneous Wiring</li>
+                <li>Fish tank</li>
+                <li>External Power for Arduino</li>
+                <li>2-channel relay 5V</li>
+                <li>GFCI outlet</li>
+                <li>Housing for outlet</li>
+                <li>Extension cable (for wall plug)</li>
+                <li>Wire Cutter</li>
+                <li>Raw Wiring (arduino wires)</li>
+                <li>Electrical Tape</li>
+                <li>Computer</li>
+            </ol>
+        </div>
     </div>
+</div>
 
+<a class="anchor" id="team"></a>
+<div class = "container-fluid section-padding">
     <div class = "container section-padding">
         <h1 class="display-4 center-text section-title">The Team</h1>
         <div class="row center-text">
-            <div class="col">
-                <img src="/images/josh_photo.png" class="rounded float-left resize-team-image" alt="team image">
+            <div class="col horizontal-spacing">
+                <img src="/images/josh_photo.png" class="rounded float-left team-image" alt="team image">
                 <h5>Josh Redding  Co-Founder</h5>
                 <p>Integrated Engineering + Honors Business Administration</p>
                 <p>Chatham, Ontario</p>
                 <p>redingjoshua41@gmail.com</p>
             </div>
-            <div class="col">
-                <img src="/images/dill_photo.png" class="rounded float-left resize-team-image" alt="team image">
+            <div class="col horizontal-spacing">
+                <img src="/images/dill_photo.png" class="rounded float-left team-image" alt="team image">
                 <h5>Madalitso Mchaina Co-Founder</h5>
                 <p>Computer Engineering</p>
                 <p>Cambridge, Ontario</p>
                 <p>mmchain@uwo.ca</p>
             </div>
-            <div class="w-100 horizontal-spacing"></div>
-            <div class="col">
-                <img src="/images/patrick_photo.png" class="rounded float-left resize-team-image" alt="team image">
+            <div class="w-100"></div>
+            <div class="col horizontal-spacing">
+                <img src="/images/patrick_photo.png" class="rounded float-left team-image" alt="team image">
                 <h5>Patrick Park  Co-Founder</h5>
                 <p>Electrical Engineering</p>
                 <p>Vancouver, British Columbia</p>
                 <p>parkpatrickj@gmail.com</p>
             </div>
-            <div class="col">
-                <img src="/images/jackie_photo.png" class="rounded float-left resize-team-image" alt="team image">
-                <h5>Josh Redding  Co-Founder</h5>
+            <div class="col horizontal-spacing">
+                <img src="/images/jackie_photo.png" class="rounded float-left team-image" alt="team image">
+                <h5>Jackie Ngo Co-Founder</h5>
                 <p>Software Engineering</p>
                 <p>Toronto, Ontario</p>
                 <p>jackie.ngo888@gmail.com</p>
             </div>
         </div>
     </div>
+</div>
 
-    <div class = "container section-padding">
-        <h1 class="display-4 center-text section-title">Contact</h1>
+<a class="anchor" id="contact"></a>
+<div class = "container section-padding center-text">
+    <h1 class="display-4 center-text section-title">Have Questions?</h1>
+    <button type="button" class="btn btn-outline-primary contact-btn">Contact Us</button>
+</div>
+
+<footer>
+    <div class = "row center-text">
+        <div class = "col">
+        </div>
+        <div class = "col">
+            <img src="/images/steam_logo.png" class="small-logo" alt="logo">
+        </div>
+        <div class = "col">
+            <a class = "ion-social-facebook" href = ""></a>
+            <a class = "ion-social-twitter" href = ""></a>
+            <a class = "ion-social-googleplus" href = ""></a>
+            <a class = "ion-social-instagram" href = ""></a>
+        </div>
     </div>
-
-    <h1>hello</h1>
+</footer>
 
 </body>
 </html>
