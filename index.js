@@ -33,4 +33,4 @@ app.use('/',  express.static(__dirname + '/SteamWebsite2.0', {extensions: ['html
 
 //app.use('/images', express.static(__dirname +'/images'));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
